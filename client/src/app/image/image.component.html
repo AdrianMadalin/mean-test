@@ -1,0 +1,6 @@
+<h3>Image component</h3>
+<button class="btn btn-primary" (click)="onGetImages()">Get img / clear</button>
+
+<ul *ngIf="(images !== undefined) && clearApi">
+  <li *ngFor="let img of images">Image {{img['imageId']}} is a {{img['imageDesc']}}</li>
+</ul>

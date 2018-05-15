@@ -1,0 +1,7 @@
+<h3>User component</h3>
+<button class="btn btn-primary" (click)="onGetUsers()">Get users / clear</button>
+
+<ul *ngIf="(users !== undefined) && clear">
+  <li *ngFor="let user of users">Username is {{user['userName']}} and id is {{user['userId']}}</li>
+</ul>
+
